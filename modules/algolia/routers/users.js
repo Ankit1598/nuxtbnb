@@ -1,4 +1,4 @@
-import { sendJSON } from '../helpers'
+import { sendJSON } from '../../helpers'
 
 export default (apis) => {
 	const makeUserPayload = (identity) => {
