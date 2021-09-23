@@ -46,11 +46,33 @@ export default (algoliaConfig) => {
 		payload.homeId = homes
 		this.create(identity, payload)
 	}
+	async function bookHome(identityId, homeId, start, end) {
+		try {
+			return unWrap(
+				await fetch(
+					`https://${algoliaConfig.appId}-dsn.algolia.net/1/indexes/bookings/`,
+					{
+						headers,
+						method: 'POST',
+						body: JSON.stringify({
+							identityId,
+							homeId,
+							start,
+							end,
+						}),
+					}
+				)
+			)
+		} catch (error) {
+			return getErrorResponse(error)
+		}
+	}
 
 	return {
 		assignHome,
 		create,
 		getById,
 		removeHome,
+		bookHome,
 	}
 }
