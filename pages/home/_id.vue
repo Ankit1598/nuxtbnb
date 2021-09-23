@@ -1,0 +1,40 @@
+<template>
+	<div class="app-container">
+		<PropertyGallery :images="home.images" />
+		<PropertyDetails :home="home" />
+		<PropertyDescription :home="home" />
+		<PropertyMap :home="home" />
+		<PropertyReviews :reviews="reviews" />
+		<PropertyHost :user="user" />
+	</div>
+</template>
+
+<script>
+export default {
+	async asyncData({ params, $dataApi, error }) {
+		const responses = await Promise.all([
+			$dataApi.getHome(params.id),
+			$dataApi.getReviewsByHomeId(params.id),
+			$dataApi.getUserByHomeId(params.id),
+		])
+		const badResponse = responses.find((resp) => !resp.ok)
+		if (badResponse)
+			return error({
+				statusCode: badResponse.status,
+				message: badResponse.statusText,
+			})
+		return {
+			home: responses[0].json,
+			reviews: responses[1].json.hits,
+			user: responses[2].json.hits[0],
+		}
+	},
+	head() {
+		return {
+			title: this.home.title,
+		}
+	},
+}
+</script>
+
+<style></style>

@@ -1,0 +1,42 @@
+{
+	"name": "nuxtbnb",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate",
+		"lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+		"lint": "npm run lint:js"
+	},
+	"dependencies": {
+		"@nuxtjs/axios": "^5.13.6",
+		"@nuxtjs/cloudinary": "^1.0.3",
+		"@nuxtjs/dotenv": "^1.4.1",
+		"body-parser": "^1.19.0",
+		"cloudinary-vue": "^1.2.3",
+		"cookie": "^0.4.1",
+		"core-js": "^3.15.1",
+		"crypto": "^1.0.1",
+		"google-auth-library": "^7.9.2",
+		"js-cookie": "^3.0.1",
+		"nuxt": "^2.15.7",
+		"stripe": "^8.176.0",
+		"uuid": "^8.3.2",
+		"v-calendar": "^2.3.2"
+	},
+	"devDependencies": {
+		"@babel/eslint-parser": "^7.14.7",
+		"@nuxt/image": "^0.6.0",
+		"@nuxtjs/eslint-config": "^6.0.1",
+		"@nuxtjs/eslint-module": "^3.0.2",
+		"@nuxtjs/tailwindcss": "^4.2.0",
+		"eslint": "^7.29.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-nuxt": "^2.0.0",
+		"eslint-plugin-vue": "^7.12.1",
+		"postcss": "^8.3.5",
+		"prettier": "^2.3.2"
+	}
+}

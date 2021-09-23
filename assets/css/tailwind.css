@@ -1,0 +1,492 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.city-paris {
+	background-image: url(/images/photos/paris.jpg);
+}
+
+.city-new-york {
+	background-image: url(/images/photos/new-york.jpg);
+}
+
+.city-london {
+	background-image: url(/images/photos/london.jpg);
+}
+
+.city-dubai {
+	background-image: url(/images/photos/dubai.jpg);
+}
+
+.city-san-francisco {
+	background-image: url(/images/photos/san-francisco.jpg);
+}
+
+.city-cancun {
+	background-image: url(/images/photos/cancun.jpg);
+}
+
+.app-flex {
+	@apply flex justify-between items-center;
+}
+
+.app-padded-vertical {
+	@apply py-20;
+}
+
+.app-background-grey {
+	@apply bg-catskill-white;
+}
+
+.app-container {
+	@apply max-w-400 mx-auto px-10;
+}
+
+.app-header {
+	@apply flex items-center py-9 px-10;
+}
+
+.app-logo {
+	@apply inline-block mr-10;
+}
+
+.app-description {
+	@apply text-trout text-lg;
+}
+
+.app-tag {
+	@apply bg-zumthor text-east-bay text-lg py-3 px-4 inline-block mr-3 mb-3 rounded;
+}
+
+.app-address {
+	background-image: url(/images/icons/pin.svg);
+	background-position: top 2px left;
+	@apply pl-5 bg-no-repeat text-dodger-blue text-sm underline;
+}
+
+.app-map {
+	@apply flex items-center justify-center h-136 text-white bg-polo-blue text-2xl;
+}
+
+.app-rating {
+	background-image: url(/images/icons/star.svg);
+	background-position: top 2px left;
+	@apply pl-5 bg-no-repeat text-mineshaft font-medium text-sm;
+}
+
+.app-rating > span {
+	@apply text-polo-blue;
+}
+
+.app-price {
+	@apply text-mineshaft font-medium mt-3;
+}
+
+.app-price > span {
+	@apply text-polo-blue font-normal;
+}
+
+.app-big-button {
+	@apply text-xl bg-dodger-blue text-white py-5 w-full rounded-lg mt-5 shadow-2xl;
+}
+
+.app-search {
+	@apply flex items-center;
+}
+
+.app-search input {
+	@apply border-2 border-link-water rounded-lg text-lg py-3 px-2 mr-8;
+}
+
+.app-search input.datepicker {
+	background-image: url(/images/icons/calendar.svg);
+	background-position: center right 0.625rem;
+	@apply bg-no-repeat;
+}
+
+.app-search > button {
+	@apply bg-dodger-blue px-5 rounded-lg min-w-max h-15 self-center;
+}
+
+.app-user-menu {
+	@apply ml-auto flex items-center;
+}
+
+.app-user-menu .name {
+	@apply ml-2;
+}
+
+.app-user-menu .avatar {
+	@apply w-12 h-12 rounded-full border-2 border-dodger-blue ml-10;
+}
+
+.app-hero {
+	background-image: url(/images/photos/beach.jpg);
+	@apply h-148 bg-cover rounded-3xl flex items-end justify-center pb-12;
+}
+
+.app-hero > h2 {
+	@apply text-white font-medium text-3xl;
+}
+
+.app-wrapper {
+	@apply max-w-282 mx-auto;
+}
+
+.app-title {
+	font-stretch: condensed;
+	@apply text-east-bay text-4xl font-bold pb-15;
+}
+
+.app-subtitle {
+	font-stretch: condensed;
+	@apply text-east-bay text-3xl font-medium pb-8;
+}
+
+.app-gallery {
+	@apply grid grid-cols-4 gap-6;
+}
+
+.app-gallery-item {
+	@apply h-104 rounded-2xl p-5 flex items-end text-white shadow-2xl;
+}
+
+.app-gallery-item h3 {
+	@apply font-medium text-3xl;
+}
+
+.app-gallery-item p {
+	@apply text-2xl uppercase tracking-widest;
+}
+
+.app-testimonials {
+	@apply flex flex-wrap;
+}
+
+.app-testimonials > div {
+	@apply w-1/2 mb-15;
+}
+
+.app-testimonials > div:nth-child(odd) {
+	@apply pr-4;
+}
+
+.app-testimonials > div:nth-child(even) {
+	@apply pl-4;
+}
+
+.app-testimonials > div .app-testimonial-header {
+	@apply flex items-center mb-5;
+}
+
+.app-testimonials > div .app-testimonial-header img {
+	@apply mr-2 rounded-full;
+}
+
+.app-testimonials > div .app-testimonial-header .app-testimonial-name {
+	@apply text-east-bay font-medium text-xl;
+}
+
+.app-testimonials > div .app-testimonial-header .app-testimonial-date {
+	@apply text-polo-blue font-medium text-sm;
+}
+
+.app-testimonials > div .app-testimonial-body {
+	background-image: url(/images/icons/quote.svg);
+	text-indent: 22px;
+	@apply bg-no-repeat text-sm text-trout;
+}
+
+.app-testimonials > div .app-testimonial-body > a {
+	@apply text-dodger-blue;
+}
+
+.app-testimonials-actions {
+	@apply w-1/2 mx-auto;
+}
+
+.app-dual-picture {
+	@apply flex items-center w-full rounded-2xl overflow-hidden;
+}
+
+.app-dual-picture > a {
+	@apply flex-grow w-1/2 h-94 p-5 flex items-end text-white justify-center;
+}
+
+.app-dual-picture > a h3 {
+	@apply font-medium text-3xl;
+}
+
+.app-dual-picture > a p {
+	@apply text-2xl uppercase tracking-widest;
+}
+
+.app-double-column {
+	@apply flex;
+}
+
+.app-double-column > div:nth-child(1) {
+	@apply w-7/12 border-dashed border-r border-dusty-gray pr-14;
+}
+
+.app-double-column > div:nth-child(2) {
+	@apply w-5/12 pl-14;
+}
+
+.app-carousel-header {
+	@apply flex justify-between items-center mb-15;
+}
+
+.app-carousel-header h2 {
+	@apply text-east-bay text-4xl font-bold;
+}
+
+.app-carousel-items {
+	@apply grid grid-cols-3 gap-6;
+}
+
+.app-carousel-pagination {
+	@apply flex items-center;
+}
+
+.app-carousel-pagination-page {
+	@apply text-east-bay text-xl mr-6;
+}
+
+.app-carousel-pagination-buttons button {
+	font-size: 1px;
+	background-image: url(/images/icons/chevron.svg);
+	@apply bg-no-repeat bg-center rounded-full border-2 border-dodger-blue h-12 w-12;
+}
+
+.app-carousel-pagination-buttons button:focus {
+	@apply outline-none;
+}
+
+.app-carousel-pagination-buttons button:hover {
+	@apply opacity-75;
+}
+
+.app-carousel-pagination-buttons button:first-child {
+	transform: scaleX(-1);
+}
+
+.app-masonry {
+	@apply grid grid-cols-4 grid-rows-2 gap-6 mb-18;
+	grid-template-rows: 280px 280px;
+}
+
+.app-masonry > div {
+	background-size: cover;
+}
+
+.app-masonry > div:nth-child(1) {
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+	@apply rounded-l-3xl;
+}
+
+.app-masonry > div:nth-child(2) {
+	grid-column: 3 / 4;
+}
+
+.app-masonry > div:nth-child(3) {
+	grid-column: 4 / 5;
+	@apply rounded-tr-3xl;
+}
+
+.app-masonry > div:nth-child(4) {
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+}
+
+.app-masonry > div:nth-child(5) {
+	grid-column: 4 / 5;
+	grid-row: 2 / 3;
+	@apply rounded-br-3xl;
+}
+
+.app-property-details h1 {
+	@apply text-east-bay text-4xl font-medium leading-snug mb-8;
+}
+
+.app-property-details .app-address {
+	@apply text-lg bg-left;
+}
+
+.app-property-details .app-rating {
+	@apply text-lg bg-left;
+}
+
+.app-property-details .app-price {
+	@apply text-dodger-blue text-6xl mt-0 leading-none mb-10;
+}
+
+.app-property-details .app-price span {
+	@apply text-4xl;
+}
+
+.app-property-details .app-search {
+	@apply grid grid-cols-2 gap-4;
+}
+
+.app-property-details .app-search input {
+	@apply mr-0;
+}
+
+.app-property-details-footer {
+	@apply border-t border-dashed border-dusty-gray pt-12 mt-14 pb-18 text-xl font-medium text-east-bay;
+}
+
+.app-house {
+	@apply rounded-lg bg-white shadow-xl;
+}
+
+.app-house-header img {
+	@apply rounded-t-lg;
+}
+
+.app-house h2 {
+	@apply font-medium text-lg py-2;
+}
+
+.app-house-body {
+	@apply p-5;
+}
+
+.app-house-footer {
+	@apply flex items-center justify-between mt-8 text-mineshaft text-sm;
+}
+
+.app-house-guests {
+	background-image: url(/images/icons/group.svg);
+	background-size: auto 20px;
+	@apply pl-6 bg-no-repeat;
+}
+
+.app-host-header {
+	@apply flex items-center mb-5;
+}
+
+.app-host-header img {
+	@apply mr-5 w-24 rounded-lg;
+}
+
+.app-host-header .app-host-name {
+	@apply text-east-bay font-medium text-xl;
+}
+
+.app-host-header .app-host-date {
+	@apply text-polo-blue font-medium text-sm mb-5;
+}
+
+.app-host-header .app-host-reviews {
+	background-image: url(/images/icons/star-blue.svg);
+	@apply text-east-bay text-xl mr-10 bg-left bg-no-repeat pl-8;
+}
+
+.app-host-header .app-host-medal {
+	background-image: url(/images/icons/medal.svg);
+	@apply text-east-bay text-xl  bg-left bg-no-repeat pl-8;
+}
+
+.app-host-description {
+	@apply text-trout mt-8;
+}
+
+.app-error-page {
+	background-image: url(/images/illustrations/wave.svg),
+		url(/images/illustrations/mountains.svg),
+		linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(157, 187, 215, 1) 100%
+		);
+	background-position: center, bottom -82px center, center;
+	background-size: cover, auto, cover;
+	@apply bg-no-repeat flex items-center justify-center min-h-screen;
+}
+
+.app-search-results-page {
+	@apply flex flex-col;
+	height: 85vh;
+}
+
+.app-search-results {
+	min-height: 85vh;
+	@apply flex overflow-hidden;
+}
+
+.app-search-results-listing {
+	@apply bg-catskill-white w-8/12 p-10 max-w-200 overflow-auto;
+}
+
+.app-search-results-listing .app-title {
+	@apply pb-10;
+}
+
+.app-search-results-listing .app-house {
+	@apply flex mb-5 shadow-none relative;
+}
+
+.app-search-results-listing .app-house .app-house-header {
+	@apply rounded-t-none rounded-l-lg;
+	width: 360px;
+	background-size: cover;
+}
+
+.app-search-results-listing .app-house .app-house-body {
+	@apply flex-1;
+}
+
+.app-search-results-listing .app-house .app-house-body .app-fav {
+	@apply absolute top-0 right-0 mt-5 mr-5;
+}
+
+.app-search-results-listing .app-house .app-house-body h2 {
+	@apply pt-0;
+}
+
+.app-search-results-listing .app-house .app-house-body .app-amenities {
+	@apply text-lynch pt-5 pb-4 text-sm leading-relaxed;
+}
+
+.app-search-results-listing .app-house .app-house-body .app-price {
+	@apply mt-0;
+}
+
+.app-search-results-listing-pagination {
+	@apply flex justify-center items-center mt-10;
+}
+
+.app-search-results-listing-pagination .app-next,
+.app-search-results-listing-pagination .app-prev {
+	font-size: 1px;
+	background-image: url(/images/icons/chevron.svg);
+	@apply mx-8 bg-no-repeat bg-center rounded-full border-2 border-dodger-blue h-10 w-10 bg-transparent text-transparent;
+}
+
+.app-search-results-listing-pagination .app-prev {
+	transform: scaleX(-1);
+}
+
+.app-search-results-listing-pagination .app-page-button {
+	padding: 7px 6px 7px 8px;
+	@apply text-sm text-east-bay rounded-lg;
+}
+
+.app-search-results-listing-pagination .app-page-button-active {
+	@apply border border-polo-blue;
+}
+
+.app-search-results-listing-footer {
+	@apply text-center text-polo-blue text-sm mt-4;
+}
+
+.app-search-results-map {
+	@apply flex-1;
+}
+
+.app-search-results-map .app-map {
+	@apply h-full;
+}
